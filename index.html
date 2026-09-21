@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare São Mateus | Petshop completo - banho, tosa e veterinário</title>
+    <meta name="description" content="Petshop completo em São Mateus: banho e tosa, consultas veterinárias, vacinação, hotelzinho e adestramento. Agende online pelo nosso site!">
+    <meta name="author" content="PetCare São Mateus">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon-192.png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ HEADER FIXO ============ -->
+    <header class="header" id="header">
+        <div class="container header-conteudo">
+            <a href="#home" class="logo" aria-label="PetCare São Mateus - início">
+                <span class="logo-icone" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="currentColor">
+                            <ellipse cx="32" cy="45" rx="14" ry="11"/>
+                            <circle cx="13.5" cy="29" r="6.5"/>
+                            <circle cx="24" cy="19.5" r="7"/>
+                            <circle cx="40" cy="19.5" r="7"/>
+                            <circle cx="50.5" cy="29" r="6.5"/>
+                        </g>
+                    </svg>
+                </span>
+                <span class="logo-texto">PetCare <strong>São Mateus</strong></span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <ul class="nav-lista">
+                    <li><a href="#home" class="nav-link ativo">Home</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#agendamento" class="nav-link">Agendamento</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="home">
+            <span class="hero-pata hero-pata-1" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><g fill="currentColor"><ellipse cx="32" cy="45" rx="14" ry="11"/><circle cx="13.5" cy="29" r="6.5"/><circle cx="24" cy="19.5" r="7"/><circle cx="40" cy="19.5" r="7"/><circle cx="50.5" cy="29" r="6.5"/></g></svg>
+            </span>
+            <span class="hero-pata hero-pata-2" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><g fill="currentColor"><ellipse cx="32" cy="45" rx="14" ry="11"/><circle cx="13.5" cy="29" r="6.5"/><circle cx="24" cy="19.5" r="7"/><circle cx="40" cy="19.5" r="7"/><circle cx="50.5" cy="29" r="6.5"/></g></svg>
+            </span>
+
+            <div class="container hero-conteudo">
+                <span class="hero-selo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g fill="currentColor" stroke="none"><ellipse cx="12" cy="16.5" rx="4.4" ry="3.5"/><circle cx="6" cy="11.5" r="2"/><circle cx="9.4" cy="8.3" r="2.1"/><circle cx="14.6" cy="8.3" r="2.1"/><circle cx="18" cy="11.5" r="2"/></g></svg>
+                    Cuidado completo para cães e gatos
+                </span>
+                <h1 class="hero-titulo">O melhor cuidado para o seu <span class="destaque">melhor amigo</span></h1>
+                <p class="hero-subtitulo">
+                    No PetCare São Mateus, seu pet recebe atendimento carinhoso, profissionais
+                    qualificados e produtos de qualidade. Banho, tosa, saúde e diversão em um só lugar.
+                </p>
+                <div class="hero-botoes">
+                    <a href="#agendamento" class="btn btn-laranja">Agende Agora</a>
+                    <a href="#servicos" class="btn btn-contorno">Conheça os Serviços</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>+2.500</strong><span>pets atendidos</span></div>
+                    <div class="stat">
+                        <strong>4,9
+                            <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </strong>
+                        <span>avaliação dos tutores</span>
+                    </div>
+                    <div class="stat"><strong>10 anos</strong><span>de experiência</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SERVIÇOS ============ -->
+        <section class="secao" id="servicos">
+            <div class="container">
+                <div class="cabecalho-secao revelar">
+                    <span class="rotulo">Nossos Serviços</span>
+                    <h2>Tudo que seu pet precisa em um só lugar</h2>
+                    <p class="descricao-secao">
+                        Uma equipe apaixonada por animais e uma estrutura completa para garantir
+                        saúde, beleza e bem-estar do seu companheiro.
+                    </p>
+                </div>
+
+                <div class="grade-servicos">
+                    <!-- Banho e Tosa -->
+                    <article class="cartao cartao-servico revelar">
+                        <span class="icone-circulo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                        </span>
+                        <h3>Banho e Tosa</h3>
+                        <p>Banho completo com produtos premium, tosa higiênica e tosa da raça, feita com paciência e muito carinho.</p>
+                        <span class="preco-servico">A partir de R$ 45</span>
+                    </article>
+
+                    <!-- Consulta Veterinária -->
+                    <article class="cartao cartao-servico revelar" style="--atraso:.1s">
+                        <span class="icone-circulo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+                        </span>
+                        <h3>Consulta Veterinária</h3>
+                        <p>Consultas completas com profissionais experientes, desde o check-up de rotina até o acompanhamento de doenças.</p>
+                        <span class="preco-servico">R$ 120 / consulta</span>
+                    </article>
+
+                    <!-- Vacinação -->
+                    <article class="cartao cartao-servico revelar" style="--atraso:.2s">
+                        <span class="icone-circulo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>
+                        </span>
+                        <h3>Vacinação</h3>
+                        <p>Carteira de vacinação atualizada com as principais vacinas para cães e gatos, com orientação veterinária.</p>
+                        <span class="preco-servico">R$ 80 / dose</span>
+                    </article>
+
+                    <!-- Hotelzinho -->
+                    <article class="cartao cartao-servico revelar" style="--atraso:.3s">
+                        <span class="icone-circulo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </span>
+                        <h3>Hotelzinho</h3>
+                        <p>Hospedagem segura, limpa e climatizada, com recreação monitorada e acompanhações diárias pelo WhatsApp.</p>
+                        <span class="preco-servico">R$ 70 / diária</span>
+                    </article>
+
+                    <!-- Adestramento -->
+                    <article class="cartao cartao-servico revelar" style="--atraso:.4s">
+                        <span class="icone-circulo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </span>
+                        <h3>Adestramento</h3>
+                        <p>Adestramento com reforço positivo para cães e gatos: obediência, socialização e correção de comportamento.</p>
+                        <span class="preco-servico">R$ 100 / sessão</span>
+                    </article>
+                </div>
+
+                <div class="faixa-cta revelar">
+                    <p><strong>Não encontrou o serviço que procura?</strong> Fale com a nossa equipe.</p>
+                    <a href="https://wa.me/5511987654321" target="_blank" rel="noopener" class="btn btn-verde">Chamar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PRODUTOS ============ -->
+        <section class="secao secao-fundo" id="produtos">
+            <div class="container">
+                <div class="cabecalho-secao revelar">
+                    <span class="rotulo">Produtos</span>
+                    <h2>Produtos de qualidade para o seu pet</h2>
+                    <p class="descricao-secao">
+                        Rações super premium, brinquedos, acessórios e medicamentos das melhores
+                        marcas, com preços que cabem no seu bolso.
+                    </p>
+                </div>
+
+                <div class="grade-produtos">
+                    <!-- Ração 1 -->
+                    <article class="cartao cartao-produto revelar">
+                        <span class="produto-imagem fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="4.5" r="1"/><circle cx="14.5" cy="4.5" r="1"/><circle cx="12" cy="7.5" r="1"/><path d="M2.5 11.5h19"/><path d="M3.5 11.5h17l-1.2 4.6A4 4 0 0 1 15.4 19H8.6a4 4 0 0 1-3.9-2.9z"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-verde">Ração</span>
+                        <h3>Ração Super Premium Carne 15kg</h3>
+                        <p>Nutrição completa para cães adultos de porte médio.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 189,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Ração Super Premium Carne 15kg">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Ração 2 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.05s">
+                        <span class="produto-imagem fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="4.5" r="1"/><circle cx="14.5" cy="4.5" r="1"/><circle cx="12" cy="7.5" r="1"/><path d="M2.5 11.5h19"/><path d="M3.5 11.5h17l-1.2 4.6A4 4 0 0 1 15.4 19H8.6a4 4 0 0 1-3.9-2.9z"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-verde">Ração</span>
+                        <h3>Ração Premium Gatos Frango 10kg</h3>
+                        <p>Alta palatabilidade e saúde para gatos de todas as idades.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 129,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Ração Premium Gatos Frango 10kg">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Brinquedo 1 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.1s">
+                        <span class="produto-imagem fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-laranja">Brinquedos</span>
+                        <h3>Bola Interativa Mordedor</h3>
+                        <p>Estimula o exercício e alivia o estresse do seu pet.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 29,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Bola Interativa Mordedor">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Brinquedo 2 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.15s">
+                        <span class="produto-imagem fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-laranja">Brinquedos</span>
+                        <h3>Arranhador Torre para Gatos</h3>
+                        <p>Resistente e estável, protege o sofá e diverte o gato.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 89,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Arranhador Torre para Gatos">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Acessório 1 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.2s">
+                        <span class="produto-imagem fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-verde">Acessórios</span>
+                        <h3>Cama Confortável Pet - Tam. M</h3>
+                        <p>Tecido macio e antiderrapante, lavável e durável.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 99,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Cama Confortável Pet - Tam. M">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Acessório 2 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.25s">
+                        <span class="produto-imagem fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-verde">Acessórios</span>
+                        <h3>Coleira com Guia Ajustável</h3>
+                        <p>Nylon resistente com ajuste confortável e seguro.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 49,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Coleira com Guia Ajustável">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Medicamento 1 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.3s">
+                        <span class="produto-imagem fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-laranja">Medicamentos</span>
+                        <h3>Antipulgas Simparic - 3 doses</h3>
+                        <p>Proteção prolongada contra pulgas e carrapatos.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 79,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Antipulgas Simparic - 3 doses">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Medicamento 2 -->
+                    <article class="cartao cartao-produto revelar" style="--atraso:.35s">
+                        <span class="produto-imagem fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+                        </span>
+                        <span class="tag-categoria tag-laranja">Medicamentos</span>
+                        <h3>Vermífugo Vermivet Plus</h3>
+                        <p>Vermífugo de amplo espectro para cães e gatos.</p>
+                        <div class="produto-rodape">
+                            <span class="preco">R$ 34,90</span>
+                            <button class="btn-comprar" type="button" data-produto="Vermífugo Vermivet Plus">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="nota-ficticia revelar">Valores fictícios apenas para fins educacionais - projeto PWA Etec São Mateus.</p>
+            </div>
+        </section>
+
+        <!-- ============ AGENDAMENTO ============ -->
+        <section class="secao secao-agendamento" id="agendamento">
+            <div class="container agendamento-grade">
+                <div class="agendamento-info revelar">
+                    <span class="rotulo">Agendamento</span>
+                    <h2>Agende a visita do seu pet</h2>
+                    <p>
+                        Preencha o formulário ao lado e a nossa equipe confirma o horário
+                        pelo WhatsApp em até 2 horas úteis. Simples, rápido e sem complicação!
+                    </p>
+                    <ul class="lista-beneficios">
+                        <li>
+                            <span class="beneficio-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+                            Atendimento humanizado e sem estresse para o pet
+                        </li>
+                        <li>
+                            <span class="beneficio-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+                            Profissionais qualificados e certificados
+                        </li>
+                        <li>
+                            <span class="beneficio-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+                            Confirmação rápida pelo WhatsApp
+                        </li>
+                        <li>
+                            <span class="beneficio-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+                            Estrutura segura, limpa e climatizada
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="cartao cartao-formulario revelar" id="form-agendamento" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="pet">Nome do pet</label>
+                            <input type="text" id="pet" name="pet" placeholder="Ex.: Rex" autocomplete="off" required>
+                            <small class="campo-erro" role="alert"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Tipo de serviço</label>
+                            <select id="servico" name="servico" required>
+                                <option value="" selected disabled>Selecione o serviço</option>
+                                <option value="Banho e Tosa">Banho e Tosa</option>
+                                <option value="Consulta Veterinária">Consulta Veterinária</option>
+                                <option value="Vacinação">Vacinação</option>
+                                <option value="Hotelzinho">Hotelzinho</option>
+                                <option value="Adestramento">Adestramento</option>
+                            </select>
+                            <small class="campo-erro" role="alert"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data</label>
+                            <input type="date" id="data" name="data" required>
+                            <small class="campo-erro" role="alert"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" inputmode="numeric" autocomplete="tel" required>
+                            <small class="campo-erro" role="alert"></small>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-verde btn-bloco">Confirmar Agendamento</button>
+
+                    <div class="form-sucesso" id="form-sucesso" role="status" hidden>
+                        <span class="sucesso-icone" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg>
+                        </span>
+                        <div>
+                            <h3>Agendamento realizado com sucesso!</h3>
+                            <p id="sucesso-detalhe"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ============ CONTATO ============ -->
+        <section class="secao" id="contato">
+            <div class="container">
+                <div class="cabecalho-secao revelar">
+                    <span class="rotulo">Contato</span>
+                    <h2>Venha nos visitar</h2>
+                    <p class="descricao-secao">
+                        Estamos de portas abertas para você e seu melhor amigo.
+                        Fale conosco ou apareça na loja para conhecer nossa estrutura.
+                    </p>
+                </div>
+
+                <div class="grade-contato">
+                    <div class="cartao contato-cartao revelar">
+                        <span class="contato-icone fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </span>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Av. Ragueb Chohfi, 1234 - Jd. São Mateus<br>São Paulo, SP - CEP 08370-000</p>
+                        </div>
+                    </div>
+
+                    <a class="cartao contato-cartao revelar" style="--atraso:.1s" href="tel:+551123456789">
+                        <span class="contato-icone fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </span>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 2345-6789</p>
+                        </div>
+                    </a>
+
+                    <a class="cartao contato-cartao revelar" style="--atraso:.2s" href="https://wa.me/5511987654321" target="_blank" rel="noopener">
+                        <span class="contato-icone fundo-verde" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </span>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>(11) 98765-4321</p>
+                        </div>
+                    </a>
+
+                    <a class="cartao contato-cartao revelar" style="--atraso:.3s" href="mailto:contato@petcaresaomateus.com.br">
+                        <span class="contato-icone fundo-laranja" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </span>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@petcaresaomateus.com.br</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mapa-wrapper revelar">
+                    <iframe
+                        title="Mapa de localização do PetCare São Mateus"
+                        src="https://www.google.com/maps?q=S%C3%A3o%20Mateus%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a class="mapa-link" href="https://maps.google.com/?q=São+Mateus,+São+Paulo,+SP" target="_blank" rel="noopener">Como chegar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-grade">
+            <div class="footer-marca">
+                <a href="#home" class="logo logo-footer" aria-label="PetCare São Mateus - início">
+                    <span class="logo-icone" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" fill="none"><g fill="currentColor"><ellipse cx="32" cy="45" rx="14" ry="11"/><circle cx="13.5" cy="29" r="6.5"/><circle cx="24" cy="19.5" r="7"/><circle cx="40" cy="19.5" r="7"/><circle cx="50.5" cy="29" r="6.5"/></g></svg>
+                    </span>
+                    <span class="logo-texto">PetCare <strong>São Mateus</strong></span>
+                </a>
+                <p>
+                    Mais de 10 anos cuidando de cães e gatos em São Mateus com amor,
+                    respeito e qualidade. Seu pet merece o melhor!
+                </p>
+                <div class="redes-sociais">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram do PetCare">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook do PetCare">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://wa.me/5511987654321" target="_blank" rel="noopener" aria-label="WhatsApp do PetCare">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube do PetCare">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Links rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Horários de funcionamento</h4>
+                <ul class="footer-horarios">
+                    <li><span>Segunda a Sexta</span><strong>08h - 18h</strong></li>
+                    <li><span>Sábado</span><strong>08h - 13h</strong></li>
+                    <li><span>Domingo</span><strong>Fechado</strong></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Contato</h4>
+                <ul class="footer-contato">
+                    <li>
+                        <span class="footer-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                        Av. Ragueb Chohfi, 1234 - São Mateus, SP
+                    </li>
+                    <li>
+                        <span class="footer-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                        (11) 2345-6789
+                    </li>
+                    <li>
+                        <span class="footer-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                        contato@petcaresaomateus.com.br
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <div class="container footer-base-conteudo">
+                <p>&copy; <span id="ano">2026</span> PetCare São Mateus - Todos os direitos reservados.</p>
+                <p>Projeto PWA educacional desenvolvido para a Etec São Mateus.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BOTÃO VOLTAR AO TOPO ============ -->
+    <button class="btn-topo" id="btn-topo" aria-label="Voltar ao topo da página">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <!-- ============ TOAST ============ -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

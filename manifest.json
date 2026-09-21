@@ -1,0 +1,22 @@
+{
+    "name": "PetCare São Mateus",
+    "short_name": "PetCare",
+    "description": "Petshop completo - banho, tosa, veterinário e mais. Projeto PWA Etec São Mateus",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2E7D32",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
